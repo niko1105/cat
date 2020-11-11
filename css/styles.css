@@ -86,9 +86,6 @@ h2{
   border-bottom: solid 3px #AE0009;
 }
 
-.block{
-  padding: 0 37px;
-}
 .block img{
   width:100%;
   height: 185px;
@@ -230,7 +227,7 @@ footer p{
   color: #fff;
 }
 
-@media (min-width:500px){
+@media (min-width:768px){
   .header-flex{
     height: 60px;
   }
@@ -248,13 +245,13 @@ footer p{
   
   .sample-box img{
     width: 100%;
-    height: 600px;
+    height: 550px;
   }
   
   .logo{
     position: absolute;
-    top: 230px;
-    left: 505px;
+    top: 200px;
+    left: 250px;
   }
   
   .logo img{
@@ -264,7 +261,7 @@ footer p{
   }
   
   .primary{
-    width: 980px;
+    width: 100%;
   }
   
   h1{
@@ -279,15 +276,16 @@ footer p{
   }
   
   #cat1, 
-  .cat3{
-    width: 980px;
-    margin: 0 auto;
+  #cat3{
+    width: 100%;
+    padding: 0 20px;
   }
   
   
   #cat1 section{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-bottom: 30px;
   }
   
   #cat1 section:nth-child(even){
@@ -295,20 +293,23 @@ footer p{
   }
   
   #cat1 .pic{
+    width: 45%;
     margin-left: 10px;
   }
   #cat1 img{
-    width: 450px;
-    height: 278px;
+    width: 100%;
+    height: 250px;
+  }
+  #cat1 .info{
+    width: 45%;
   }
   
   #cat1 h2{
-    font-size: 25px;
+    font-size: 20px;
   }
   
   #cat1 p{
     font-size: 18px;
-    width: 460px;
   }
   
   #cat2{
@@ -316,26 +317,23 @@ footer p{
   }
   
   .block{
-    margin: 0 auto;
-    width: 980px;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-bottom: 30px;
   }
-    
-  #cat2 section{
-    width:300px;
+  #cat2 .block section{
+    width: 30%;
   }
-  
-  .block p{
-    width: 300px;
+  #cat2 .block section img{
+    width: 100%;
+  }
+
+  .block section p{
+    width: 100%;
     font-size: 16px;
   }
-  
-  .block img{
-    width:300px;
-    height: 185px;
-  }
-  
+    
   .block__element{
     position: relative;
   }
@@ -349,25 +347,27 @@ footer p{
     display: none;
   }
   .block__element p{
-    width: 500px;
+    width: 40%;
     color: #fff;
     font-size: 16px;
   }
   
   .element-info{
+    width: 100%;
     position: absolute;
     top: 100px;
-    left: 630px;
+    right: 30px;
   }
   
   .element-msg{
+    width: 100%;
     position: absolute;
     top: 220px;
-    left: 630px;
+    right: 30px;
   }
   
   .news{
-    width: 980px;
+    width: 100%;
     font-size: 16px;
   }
   .news ul{
@@ -384,14 +384,17 @@ footer p{
   }
       
   .footer-container{
-    width: 980px;
+    width: 95%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
   }
+  footer section{
+    width: 30%;
+  }
   
   footer ul{
-    margin: 0;
+    width: 100%;
     padding: 70px 0;
   }
     
@@ -399,5 +402,7 @@ footer p{
     padding-top: 15px;
     height: 40px;
   }
+  .f-element{
+    width: 100%;
+  }
 }
-
